@@ -34,7 +34,7 @@ const addDb = (id) => {
 };
 const removeItem = (id) => {
   const exists = getDb();
-  if (exists) {
+  if (!exists) {
   } else {
     const shoppingCart = JSON.parse(exists);
     delete shoppingCart[id];
