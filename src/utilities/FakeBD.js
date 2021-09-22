@@ -35,6 +35,7 @@ const addDb = (id) => {
 const removeItem = (id) => {
   const exists = getDb();
   if (!exists) {
+    // এখানে বলা হয়েছে কিছু না পাওয়া গেলে জা করবা । কিছু না পাইলে কিছুই করব না তাই কোণ কিছু লেখা হয় নি ।
   } else {
     const shoppingCart = JSON.parse(exists);
     delete shoppingCart[id];
